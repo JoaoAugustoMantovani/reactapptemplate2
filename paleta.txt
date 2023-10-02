@@ -1,0 +1,7 @@
+fundo #121214
+
+fundo header #202024
+
+roxo #8257E5
+
+texto da header #E1E1E6

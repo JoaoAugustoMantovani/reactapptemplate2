@@ -1,0 +1,14 @@
+.Header{
+    background-color: #202024;
+    width: 100vw;
+    height: 68px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+
