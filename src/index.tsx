@@ -3,37 +3,43 @@ import ReactDOM from 'react-dom/client';
 import './styles/global.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 //routes
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Route, Link } from 'react-router-dom';
 
-import CreateTicket from './components/pages/CreateTicket';
-import History from './components/pages/History';
-import TicketManagement from './components/pages/TicketManagement';
-import UserManagement from './components/pages/UserManagement';
+import CreateTicket from './pages/CreateTicket';
+import History from './pages/History';
+import TicketManagement from './pages/TicketManagement';
+import UserManagement from './pages/UserManagement';
+import Home from './pages/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Home/>,
+
+  },
+  {
+    path: "createticket",
     element: <CreateTicket/>,
 
   },
   {
-    path: "/",
+    path: "history",
     element: <History/>,
 
   },
   {
-    path: "/",
+    path: "ticketmanagement",
     element: <TicketManagement/>,
 
   },
   {
-    path: "/",
+    path: "usermanagement",
     element: <UserManagement/>,
 
   },
 ])
+
 //render 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

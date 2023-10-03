@@ -5,3 +5,12 @@ fundo header #202024
 roxo #8257E5
 
 texto da header #E1E1E6
+
+
+Font Montserrat Semibold:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+font-family: 'Montserrat', sans-serif;
