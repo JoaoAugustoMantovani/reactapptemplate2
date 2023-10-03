@@ -4,12 +4,43 @@ import './styles/global.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//routes
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import CreateTicket from './components/pages/CreateTicket';
+import History from './components/pages/History';
+import TicketManagement from './components/pages/TicketManagement';
+import UserManagement from './components/pages/UserManagement';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <CreateTicket/>,
+
+  },
+  {
+    path: "/",
+    element: <History/>,
+
+  },
+  {
+    path: "/",
+    element: <TicketManagement/>,
+
+  },
+  {
+    path: "/",
+    element: <UserManagement/>,
+
+  },
+])
+//render 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
